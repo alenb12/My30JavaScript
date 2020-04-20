@@ -5,7 +5,7 @@
   <title>JS + CSS Clock</title>
 </head>
 <body>
-  <button><a href="/My30JavaScript">BACK</a></button>
+  <button onclick="goBack()">Go Back</button>
 
 
     <div class="clock">
@@ -98,6 +98,9 @@
 
   setInterval(setDate, 1000);
 
+  function goBack() {
+    window.history.back();
+  }
 </script>
 </body>
 </html>
