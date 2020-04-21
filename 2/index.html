@@ -9,6 +9,10 @@
 
 
     <div class="clock">
+      <div class="timeNumber twelve">12</div>
+      <div class="timeNumber three">3</div>
+      <div class="timeNumber six">6</div>
+      <div class="timeNumber nine">9</div>
       <div class="clock-face">
         <div class="hand hour-hand"></div>
         <div class="hand min-hand" style="background: red;"></div>
@@ -36,6 +40,9 @@
     }
 
     .clock {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 30rem;
       height: 30rem;
       border: 20px solid white;
@@ -66,6 +73,25 @@
       transform-origin: 100%;
       transform: rotate(90deg);
       transition: all 0.05s;
+    }
+
+    .timeNumber{
+      position: absolute;
+      color: #efefef;
+      font-size: 4rem;
+      font-family: fantasy;
+    }
+    .twelve{
+      top: 2rem;
+    }
+    .three{
+      right: 2rem;
+    }
+    .six{
+      bottom: 2rem;
+    }
+    .nine{
+      left: 2rem;
     }
 
   </style>
