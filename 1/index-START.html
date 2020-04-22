@@ -79,6 +79,13 @@
 
   window.addEventListener('keydown', playSound);
 
+  const aButton = document.querySelector('div[data-key="65"]');
+  aButton.addEventListener('click', function() {
+    const audio = document.querySelector('audio[data-key="65"]');
+    audio.currentTime = 0;
+    audio.play();
+  });
+
   function goBack() {
     window.history.back();
   }
